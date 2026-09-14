@@ -1,14 +1,18 @@
-
-const EventEmitter = require('events');
-class MyEmitter extends EventEmitter {}
-const myEmitter = new MyEmitter();
-myEmitter.on("greet", (name) => {
-    console.log("Hello, " + name + " Welcome");
-});
-
-// exit
-myEmitter.on("exit", () => {
-    console.log("Program ended.");
-});
-myEmitter.emit("greet", "Rashmi");
-myEmitter.emit("exit");
+//understand the concept of fetch in console 
+async function test(){
+   console.log("this is asynchronous function and we want use fetch() in console");
+   const response= await fetch("./studentss.json");
+   console.log(response.status);
+   
+   const stud=await response.json();
+   return stud;
+   console.log("finally data fetch");
+   
+}
+test().then((res)=>{
+    console.log(res);
+    
+}).catch((err)=>{
+    console.log(err);
+    
+})

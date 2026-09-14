@@ -59,23 +59,43 @@
 //async function for data json data fetch 
 
 
-async function data(){
-    console.log("2:message");
-    const response=await fetch("./studentdata.json");
-    console.log(response.status);
+// async function data(){
+//     console.log("2:message");
+//     const response=await fetch("./studentdata.json");
+//     console.log(response.status);
     
-    const std=await response.json();
-    return std; 
+//     const std=await response.json();
+//     return std; 
 
-    await console.log("3:message");
-    console.log("4:message");
+//     await console.log("3:message");
+//     console.log("4:message");
 
-}
-console.log("1:message");
+// }
+// console.log("1:message");
 
 
-data().then((res)=>{
-    console.log(res);
-}).catch((err)=>{
-    console.log(err);
-})
+// data().then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+
+
+//Promises:object
+//Promise way 1
+//   const promiseOne=new Promise((resolve,reject)=>{
+//    console.log("promise done");
+//    resolve("operation successful");
+//    let success=true;
+//     if(success){
+//         resolve("operation successful");
+//     }else{
+//         reject("operation fail");
+//     }
+//   })
+//   promiseOne.then((result)=>{
+//  console.log(result);
+//   }).catch((error)=>{
+//   console.log(error);
+//   })
