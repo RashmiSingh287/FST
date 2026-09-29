@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f1ea;
+  color: #17211b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #17211b;
+  color: white;
+  padding: 28px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+.header h1 span {
+  color: #d8f36a;
+}
+
+.header p {
+  color: #aeb8b0;
+  margin-top: 5px;
+}
+
+.status {
+  background: #24352a;
+  color: #d8f36a;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.container {
+  width: 86%;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+
+.form-section,
+.requests-section {
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.section-heading {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.section-heading > span {
+  color: #7d8b80;
+  font-weight: bold;
+}
+
+.section-heading h2 {
+  font-size: 24px;
+}
+
+.section-heading p {
+  color: #7d847e;
+  margin-top: 5px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #d9ddd7;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  background: #fafbf9;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #8ba23d;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #17211b;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2d4032;
+}
+
+.empty-state {
+  border: 2px dashed #d9ddd7;
+  border-radius: 15px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 40px;
+  color: #9aaa55;
+}
+
+.empty-state h3 {
+  margin-top: 10px;
+}
+
+.empty-state p {
+  color: #858c86;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .container {
+    width: 92%;
+  }
+}
+
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.request-card {
+  border: 1px solid #e1e5df;
+  border-radius: 14px;
+  padding: 20px;
+  background: #fafbf9;
+}
+
+.request-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.request-top h3 {
+  font-size: 18px;
+}
+
+.request-top p {
+  color: #7d847e;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.priority {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.priority.high {
+  background: #ffe1df;
+  color: #b42318;
+}
+
+.priority.medium {
+  background: #fff0c2;
+  color: #856404;
+}
+
+.priority.low {
+  background: #dff3df;
+  color: #267326;
+}
+
+.description {
+  margin-top: 18px;
+  line-height: 1.5;
+  color: #404840;
+}
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.edit-btn {
+  background: #53683c;
+}
+
+.delete-btn {
+  background: #a33a32;
+}
